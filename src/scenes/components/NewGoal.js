@@ -27,7 +27,9 @@ export default function NewGoal({ setGoals }) {
   };
 
   return (
-    <>
+    <div
+      style={{ display: "flex", justifyContent: "center", paddingTop: "60px" }}
+    >
       <form
         onSubmit={(e) => {
           handleButtonSubmit(e);
@@ -62,6 +64,6 @@ export default function NewGoal({ setGoals }) {
         />
         <button className="create-goal-btn">Create New Goal</button>
       </form>
-    </>
+    </div>
   );
 }
